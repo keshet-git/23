@@ -1,0 +1,42 @@
+# import requestsc
+# import logo from=
+# import ".App.css"
+#
+# let App_ID = 3c23c29f1559f155
+# let App_KEY = 51273edd95cf3efae15a13d9c5a3efe3
+
+# avoid = input("what the ingredients you shold avoid? You can insert more than one")
+# print(avoid)
+# "https://api.edamam.com/search?q=chicken&app_id=${YOUR_APP_ID}&app_key=${YOUR_APP_KEY}&from=0&to=3&calories=591-722&h
+import requests
+
+sentenc = int(input("What kind of dish would you like to prepare?"))
+
+print()
+foodCategory = {"1":"salad", "2":"fish", "3":"soup", 4:"unsweetened pie", 5:"filled pastry", 6:"meat", 7:"chke", 8:"cookie & biscuit", 9:"pancake"}
+
+print(foodCategory)
+print(sentenc)
+sentenc = x
+avoid = int(input("what the ingredients you shold avoid? You can insert more than one"))
+digits_mapping_avoid = {"1":"peanut", "2":"egg","3":"milk", "4":"walnut", "5":"Pork", "6":"apricot", "7":"sesame"}
+print(digits_mapping_avoid)
+print(avoid)
+avoid = w
+url = "https://3c23c29f1559f155/egg-free-dairy-free-pumpkin-pie-recipe"
+
+querystring = {"q":"I want a recipe for a unsweetened pie ,eggs-free"}
+
+headers = {
+    'x-rapidapi-key': "51273edd95cf3efae15a13d9c5a3efe3",
+    'x-rapidapi-host': "webknox-recipes.3c23c29f1559f155.rapidapi.com"
+    }
+
+response = requests.request(((
+    "recipe for a unsweetened pie ,eggs-free", "https://3c23c29f1559f155/egg-free-dairy-free-pumpkin-pie-recipe", {
+    'x-rapidapi-key': "51273edd95cf3efae15a13d9c5a3efe3",
+    'x-rapidapi-host': "webknox-recipes.3c23c29f1559f155.rapidapi.com"
+    }, {"q":"How much a recipe for a unsweetened pie ,eggs-free"}
+)))
+
+print(response.text)
